@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>libro de visitas</title>
+  </head>
+  <body>
+    <h1>Articulos</h1>
+    <ul id="lista" >
+    <hr>
+    </ul>
+    <h4>crear articulo</h4>
+    <hr>
+      <input type= "button" value="Texto Grande"  onclick="textoGrande();" >
+      <input type= "button" value="Texto Mediano" onclick="textoMediano();">
+      <input type= "button" value="Texto Chico"  onclick="textoChico();">
+      <input type= "button" value="Color de Texto"  onclick="colorT();">
+      <input type= "button" value="Color de fondo" onclick="colorF();"/>
+      <input type= "button" value="Alinear Izquierda" onclick="alinearIzquierda();"/>
+      <input type= "button" value="Centrar" onclick="centrar();"/>
+      <input type= "button" value="Alinear Derecha" onclick="alinearDerecha();"/>
+      <br>
+      <textarea  name= "comentarios" rows="8" cols="60"  id="textoEscrito" oninput="mostrar();"  placeholder="escriba su comentario">
+      </textarea>
+      </br>
+    <hr>
+
+  <h2>Contenido</h2>
+  <div id="previoTexto"></div>
+
+  <input type="button" value="enviar"  onclick="agregarArticulo();"  />
+  <input type="reset"  value="borrar datos">
+
+
+
+
+<script src="comentario.js">
+
+</script>
+  </body>
+</html>
